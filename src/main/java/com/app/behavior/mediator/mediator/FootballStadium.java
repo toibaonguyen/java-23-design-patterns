@@ -91,6 +91,7 @@ public class FootballStadium implements Stadium{
         fan.setStadium(null);
         team2.getFans().remove(fan);
     }
+
     @Override
     public void notify(Actor actor, Event event) {
         if(actor instanceof FootballPlayer && event==Event.SHOOT)
